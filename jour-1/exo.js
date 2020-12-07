@@ -38,4 +38,8 @@ console.log(letters)
 // 08 - Template
 var age = 24;
 var presentation = `I'm ${age} years old`;
-console.log(presentation)
+console.log(presentation);
+
+// Bonus
+var changed = "Bonjour";
+console.log(changed.replaceAll("o", "a"));
