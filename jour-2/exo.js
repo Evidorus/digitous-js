@@ -98,9 +98,10 @@ switch (month){
 }
 
 // Bonus III
-var roundedNumber = 3.5;
-if (roundedNumber >= 3.5){
+var roundedNumber = 348.6;
+var calcul = roundedNumber - Math.floor(roundedNumber);
+if (calcul >= .5){
     console.log(Math.ceil(roundedNumber))
-} else if (roundedNumber < 3.5){
+} else if (calcul < .5){
     console.log(Math.floor(roundedNumber))
 };
