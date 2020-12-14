@@ -8,7 +8,7 @@ var cat = {
 console.log(cat);
 console.log(cat.age);
 
-if (cat.isCute === true){
+if (cat.isCute){
     console.log("So cuuuute !!")
 }
 
@@ -60,20 +60,20 @@ function addUp(num){
     for (var i = num - 1; i >= 1; i--){
         num += i;
     }
-    console.log(num)
+    return num
 }
-addUp(12)
+console.log(addUp(12));
 
 // 06 - Time
 
 function format(num){
-    var h = 0;
-    var m = 0;
-    var s = num;
-    while (s === 40){
+    var h = Math.floor(num / 3600);
+    var m = Math.floor((num % 3600) / 60);
+    var s = num % 60;
 
-    }
-    console.log(m)
+    var montre = h + ":" + m + ":" + s ;
+
+    return montre;
 
 }
-format(3700)
+console.log(format(3700))
