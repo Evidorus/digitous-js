@@ -28,10 +28,10 @@ console.log(cat2.isCute);
 // 03 - Even
 
 function checkIfEven(num){
-    if (num % 2){
-        console.log("odd")
-    } else {
+    if (num % 2 === 0){
         console.log("even")
+    } else {
+        console.log("odd")
     }
 }
 checkIfEven(684);
@@ -77,3 +77,23 @@ function format(num){
 
 }
 console.log(format(3700))
+
+// Bonus
+
+function generatePassword(num){
+    var min = 0;
+    var max = 25;
+    var mdp = 0;
+    var alph = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
+    var hasard = [Math.floor(Math.random() * (max - min + 1) + min)];
+    for (var i = 0; i = num; i++){
+        var resultat = alph[hasard];
+        mdp += resultat
+    } 
+    if (num < 6 || num > 15){
+        console.log("error");
+    }
+
+}
+
+console.log(generatePassword(9))
