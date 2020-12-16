@@ -17,3 +17,5 @@ function addition(number1){
     }
 }
 console.log(addition(process.argv[2]));
+
+module.exports = (multiply, addition)
