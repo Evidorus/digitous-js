@@ -1,8 +1,8 @@
 // 01 - Alpha
 
-function sortLetters (string){
-    var splitedString = string.split("");
-    console.log(splitedString.sort())
+function sortLetters (word){
+    var letters = word.split("");
+    console.log(letters.sort().join())
 }
 
 sortLetters("konexio")
@@ -12,17 +12,16 @@ sortLetters("konexio")
 function countEach (string){
     var string1 = string.split("").sort().join("");
     var counter = 1;
-    for (let i = 0; i < string.length; i++){
+    var longueur = string.length;
+    var demi = longueur / 2;
+    for (let i = 0; i < demi; i++){
         if ( string1[i] == string1[i + 1]){
             counter++;
+        } else if (counter === demi ) {
+            return true
         } else {
-            console.log(string1[i] + " " + counter);
-            counter = 1;
+            return false
         }
     }
-    if ( counter > counter){
-        console.log("")
-    }
 }
-
-countEach("xxxoooox")
+console.log(countEach("xxxoooxo"));
