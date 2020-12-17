@@ -18,4 +18,9 @@ function addition(number1){
 }
 console.log(addition(process.argv[2]));
 
-module.exports = (multiply, addition)
+function launchDice(num1, num2){
+    var dé = Math.floor(Math.random() * (num1 - num2 + 1) + num2);
+    return dé;
+}
+
+module.exports = (multiply, addition, launchDice)
