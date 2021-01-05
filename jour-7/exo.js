@@ -1,17 +1,20 @@
 var fs = require("fs");
-fs.readFile("exo.txt", function(err, data){
-    if (err) {
-        console.error(err);
-        return;
-     }
-    console.log("Un cadeau pour Xavier" + data)
+
+// 01 File System
+
+fs.readFile("./exo.txt", function(err, data){
+    console.log(date.toString())
 })
+
+// 02 Map double
 
 var array = [1,2,3,4,5];
 var double = array.map(function(num){
     return num * 2;
 })
 console.log(double);
+
+// 03 Map Names
 
 var longNames = [
 	{
@@ -23,4 +26,12 @@ var longNames = [
 		lastName: "Smith"
 	}
 ];
-var shortNames = longNames.map(function)
+var shortNames = longNames.map(function(name){
+    var container = {name : name.firstName + name.lastName};
+    return container;
+})
+
+console.log(shortNames)
+
+// 04 Filter Numbers
+
